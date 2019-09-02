@@ -1,0 +1,17 @@
+#barchart {
+  background-color: rgb(221, 221, 221);
+  list-style: none;
+  padding: 0;
+  width: 560px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+li {
+  display: inline-block;
+  width: 10px;
+  background-color: grey;
+  border: 1px solid black;
+  margin: 0 2px;
+}
