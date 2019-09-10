@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Parameters</title>
+</head>
+<body>
+
+    <script>
+
+        let myName = "Camilla";
+
+        let myOtherName = "Olsen";
+
+        sayHello(myName, myOtherName);
+
+        function sayHello(firstName, lastName) {
+            // console.log(`Hello ${firstName} ${lastName}`)
+        }
+
+        const firstName = "Camilla";
+        const animalType = "Jaguar";
+        const animalName = "Preben";
+
+
+        presentPet(animalName, firstName, animalType);
+
+        function presentPet(firstName, animalType, animalName) {
+            // console.log(`My name is ${firstName}, I have a ${animalType} called ${animalName}`)
+        }
+
+        // Capitalized names
+
+        let capFirstName = capitalize("caMIllA");
+        let capMiddleName = capitalize("GejL");
+        let capLastName = capitalize("OLSeN");
+
+        function capitalize(name) {
+            const nameLenght = name.length;
+
+            let firstLetter = name.substring(0, 1);
+            let lastLetters = name.substring(1, nameLenght);
+
+            const capitalizedName = firstLetter.toUpperCase() + lastLetters.toLowerCase();
+            console.log(capitalizedName);
+            return(capitalizedName);
+        }
+
+        fullName(capFirstName, capMiddleName, capLastName);
+
+        function fullName(firstName, middleName, lastName) {
+            console.log(`My name is ${firstName} ${middleName} ${lastName}`)
+        }
+
+
+        //
+        //
+        // capitalize("caMIllA", "gEJL", "OLSeN");
+        //
+        // function capitalize(firstName, middleName, lastName) {
+        //
+        // }
+        //
+        //
+        // let name = "caMilLa";
+        // const nameLenght = name.length;
+        // console.log(name);
+        //
+        // let firstLetter = name.substring(0, 1);
+        // let lastLetters = name.substring(1, nameLenght);
+        //
+        // console.log("First letter: " + firstLetter);
+        // console.log("Last letters: " + lastLetters);
+        //
+        // const capitalizedName = firstLetter.toUpperCase() + lastLetters.toLowerCase();
+        //
+        // console.log("Correctly capitalized name: " + capitalizedName);
+        //
+
+
+
+
+    </script>
+
+</body>
+</html>
