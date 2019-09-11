@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    >
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>getNameParts</title>
+</head>
+<body>
+
+    <script>
+
+        function mockify(str) {
+            const strArray = str.split("");
+
+            mockifiedArray = strArray.map(letter => {
+                const random = Math.floor(Math.random() * 2 + 1);
+                if (random === 1) {
+                    return letter.toLowerCase();
+                }
+                if (random === 2) {
+                    return letter.toUpperCase();
+                }
+            });
+
+            return mockifiedArray.join().replace(/,/g, "");
+        }
+
+        console.log(mockify("Are you mocking me?"));
+
+    </script>
+
+</body>
+</html>
+
