@@ -1,10 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <meta
+        name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    >
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>11C.03.d - Exercise - Capitalize</title>
 </head>
 <body>
-    $END$
+    <script>
+
+        function capitalize(str) {
+            const firstLetter = str.substring(0, 1);
+            const lastLetters = str.substring(1, str.length);
+            const capitalizedName = firstLetter.toUpperCase() + lastLetters.toLowerCase();
+            return capitalizedName;
+        }
+
+        console.log(capitalize("caMIllA"));
+    </script>
 </body>
 </html>

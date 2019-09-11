@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    >
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>getNameParts</title>
+</head>
+<body>
+
+    <script>
+
+        function getNameParts(fullName) {
+            let parts = fullName.split(" ");
+
+            parts = parts.map(part => {
+                return capitalize(part);
+            });
+
+            const firstName = parts.shift();
+            const lastName = parts.pop();
+            const middleName = parts.join().replace(/,/g, " ");
+
+            return {firstName, middleName, lastName};
+        }
+
+        function capitalize(str) {
+            const firstLetter = str.substring(0, 1);
+            const lastLetters = str.substring(1, str.length);
+            return firstLetter.toUpperCase() + lastLetters.toLowerCase();
+        }
+
+        console.log(getNameParts("alBUs PErcIVal wulFRIC BRIAN DUMBledorE"));
+
+    </script>
+
+</body>
+</html>
+
